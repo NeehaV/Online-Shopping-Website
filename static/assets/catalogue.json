@@ -1,0 +1,182 @@
+[
+    {
+        "id" : 1,
+        "name": "Peach Joggers",
+        "Category": "bottoms",
+        "price": "125",
+        "size": "s,m,l",
+        "listing": "new",
+        "description": "The most comfortable joggers in the best shade of fuzzy pink",
+        "imgSrc": "../static/images/product_bottoms1.jpg"
+    },
+    {
+        "id" : 2,
+        "name": "Lemon Joggers",
+        "Category": "bottoms",
+        "price": "100",
+        "size": "s,m",
+        "listing": "old",
+        "description": "The most comfortable joggers in the best shade of citrus yellow",
+        "imgSrc": "../static/images/product_bottoms2.jpg"
+    },
+    {
+        "id" : 3,
+        "name": "Khaki Pants",
+        "Category": "bottoms",
+        "price": "130",
+        "size": "s,m,l",
+        "listing": "old",
+        "description": "Casual khaki pants for that everyday look",
+        "imgSrc": "../static/images/product_bottoms3.jpg"
+    },
+    {
+        "id" : 4,
+        "name": "Fantastic Rainbow Dress",
+        "Category": "dress",
+        "price": "145",
+        "size": "s,m,l",
+        "listing": "new",
+        "description": "A dress that'll blow your mind with it's comfort and innovative look",
+        "imgSrc": "../static/images/product_bottoms4.jpg"
+    },
+    {
+        "id" : 5,
+        "name": "blue jeans",
+        "Category": "bottoms",
+        "price": "95",
+        "size": "m,l",
+        "listing": "new",
+        "description": "Innovative jeans for that innovative look",
+        "imgSrc": "../static/images/product_bottoms5.jpg"
+    },
+    {
+        "id" : 6,
+        "name": "Designer Jeans",
+        "Category": "bottoms",
+        "price": "185",
+        "size": "s,m,l",
+        "listing": "new",
+        "description": "The best jeans that are sure to catch everyone's eye",
+        "imgSrc": "../static/images/product_bottoms6.jpg"
+    },
+    {
+        "id" : 7,
+        "name": "Apple Red Floral Dress",
+        "Category": "dress",
+        "price": "110",
+        "size": "s,m,l",
+        "listing": "new",
+        "description": "The best shade of red on the best fitting dress, what more could you want?",
+        "imgSrc": "../static/images/product_dress1.jpg"
+    },
+    {
+        "id" : 8,
+        "name": "Sky Blue Sun Dress",
+        "Category": "dress",
+        "price": "125",
+        "size": "s,m,l",
+        "listing": "new",
+        "description": "A dress for those warm summer days",
+        "imgSrc": "../static/images/product_dress2.jpg"
+    },
+    {
+        "id" : 9,
+        "name": "Marmalade Fall Jacket",
+        "Category": "top",
+        "price": "175",
+        "size": "m,l",
+        "listing": "old",
+        "description": "A handsome jacket to keep you warm during that wintery cold fall season",
+        "imgSrc": "../static/images/product_outer1.jpg"
+    },
+    {
+        "id" : 10,
+        "name": "Designer Pink Fur Jacket",
+        "Category": "top",
+        "price": "280",
+        "size": "s,m",
+        "listing": "old",
+        "description": "Ever wanted to wear a bathrobe outside? This is just the jacket for you",
+        "imgSrc": "../static/images/product_outer2.jpg"
+    },
+    {
+        "id" : 11,
+        "name": "'Goodbye' Shirt",
+        "Category": "top",
+        "price": "90",
+        "size": "s,l",
+        "listing": "old",
+        "description": "A shirt for when you no longer want to be a part of the conversation",
+        "imgSrc": "../static/images/product_tops1.jpg"
+    },
+    {
+        "id" : 12,
+        "name": "Skull Tee",
+        "Category": "top",
+        "price": "95",
+        "size": "s,m,l",
+        "listing": "old",
+        "description": "A shirt for when you want to dress casual with a hint of spice",
+        "imgSrc": "../static/images/product_tops2.jpg"
+    },
+    {
+        "id" : 13,
+        "name": "Outcast Tee",
+        "Category": "top",
+        "price": "100",
+        "size": "s,m,l",
+        "listing": "old",
+        "description": "When you don't fit in, this is just the shirt for you",
+        "imgSrc": "../static/images/product_tops3.jpg"
+    },
+    {
+        "id" : 14,
+        "name": "Sky Blue Hoodie",
+        "Category": "top",
+        "price": "130",
+        "size": "s,m,l",
+        "listing": "old",
+        "description": "A hoodie so comfortable you'll never want to take it off",
+        "imgSrc": "../static/images/product_tops4.jpg"
+    },
+    {
+        "id" : 15,
+        "name": "Tee",
+        "Category": "top",
+        "price": "75",
+        "size": "s,m,l",
+        "listing": "old",
+        "description": "We don't know what it says either",
+        "imgSrc": "../static/images/product_tops5.jpg"
+    },
+    {
+        "id" : 16,
+        "name": "A Tee for a company you don't know",
+        "Category": "top",
+        "price": "85",
+        "size": "m",
+        "listing": "old",
+        "description": "Do you know that company? We don't.",
+        "imgSrc": "../static/images/product_tops6.jpg"
+    },
+    {
+        "id" : 17,
+        "name": "'Take the Trails' Tee",
+        "Category": "top",
+        "price": "65",
+        "size": "s,m,l",
+        "listing": "old",
+        "description": "It's comfortable.",
+        "imgSrc": "../static/images/product_tops7.jpg"
+    },
+    {
+        "id" : 18,
+        "name": "Tomato Red Sweater",
+        "Category": "top",
+        "price": "95",
+        "size": "s,m,l",
+        "listing": "old",
+        "description": "It says tomato soup. It looks like tomato soup.",
+        "imgSrc": "../static/images/product_tops8.jpg"
+    }
+]

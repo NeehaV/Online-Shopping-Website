@@ -1,0 +1,17 @@
+body img {
+    margin-top: 5%;
+    border-radius: 15px;
+}
+
+.flex {
+    display: flex;
+}
+
+.order-num {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.confirmation-email {
+    font-weight: bold;
+}

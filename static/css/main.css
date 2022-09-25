@@ -1,0 +1,553 @@
+    /*
+    light blue:#B0DDE4
+
+    var(--primary-color)
+     BLUE:#286FB4
+     PINK:#DF4C73
+     Dark Grey:var(--secondry-color)
+
+    lighter blue:#DBF2F6
+     BLUE:#286FB4
+     PINK:#DF4C73
+     Dark Grey:#857d7d
+     grey: #CCC
+     */
+
+
+/* ====================Basic===================== */
+:root{
+    --primary-color: #DBF2F6;
+    --secondry-color: #575050;
+    --background-color: white;
+}
+
+.dark-mode{
+    --primary-color: #262626;
+    --secondry-color: white;
+    --background-color: #1b1b1b;
+}
+
+body {
+    font-family: 'Lato', Georgia, "Arial", sans-serif;
+    line-height:1.5;
+    font-size: 1.1em;
+    color:var(--secondry-color);
+    background-color: var(--background-color);
+    margin: 0;
+    overflow-x: hidden;
+}  
+
+footer {
+    padding: 10px 0 0 0;
+    margin-top: 5em;
+    background-color: var(--primary-color);
+    color: var(--secondry-color);  
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #DF4C73;
+}
+
+/* ---sns icons--- */
+.row4-4 img {
+    max-width: 100px;
+    width:20%;
+}
+
+#darkModeSwitch {
+    width: 45px;
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    }
+
+main {
+    margin-top: 7em;
+}
+
+.center {
+    padding-bottom: 1px;
+}
+
+/* ============box for shopping cart and switch========= */
+.wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+.wrapper > .left-box {
+    margin-right: 1em;
+    margin-left: -1em;
+}
+
+/* ====================night mode switch===================== */
+.toggle_switch {
+    display: table;
+    font-size: 0.7em;
+}
+
+.toggle_switch > input {
+    display: none;
+}
+
+.toggle_switch > label {
+    display: block;
+    position: relative;
+    width: 1.8em;
+    height: 1em;
+    border-radius: 1em;
+    background-color: #BFB5B7;
+    cursor: pointer;
+}
+
+.toggle_switch > input:checked + label {
+    background-color: #286FB4;
+}
+
+.toggle_switch > label::before {
+    position: absolute;
+    top: 0.05em;
+    left: 0.05em;
+    width: calc(1em - 0.1em);
+    height: calc(1em - 0.1em);
+    border-radius: calc(1em - 0.1em);
+    background-color: #fff;
+    transition: 0.5s;
+    content: "";
+}
+
+.toggle_switch > input:checked + label::before {
+    left: calc(100% - 1em + 0.05em);
+}
+
+/* ====================header===================== */
+
+/*---------for mobile screen-------------*/ 
+#logo img {
+    max-width:40%;
+    display:block;
+    margin:0 auto;
+    }
+
+.index img {
+    max-width:40%;
+    display:block;
+    margin:0 auto;
+    }
+
+.left-box img{
+    max-width: 60%;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    position: relative;
+    background: var(--background-color);
+    }
+
+.drawer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    height: 70px;
+    padding: 0 1em;
+    }
+
+.menu ul li a {
+    display:block;
+    font-weight:bold;
+    padding: 2em;
+    border-bottom: 1px dotted #CCC;
+    color:var(--secondry-color);
+    text-decoration:none;
+    }
+
+.menu ul li a:hover {
+    background-color:var(--primary-color);
+    }
+
+.menu{
+    text-align:center;
+    background-color:#fff;
+    transition: .5s ease;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+    }
+
+.menu.open {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    }
+
+.Toggle {
+    display: block;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 3;
+    right:15px;
+}
+
+.Toggle span {
+    display: block;
+    position: absolute;
+    width: 50px;
+    border-bottom: solid 4px var(--secondry-color);
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;	
+    transition: .35s ease-in-out;	 
+}
+
+.Toggle span:nth-child(1) {
+    top:5px;
+}
+
+.Toggle span:nth-child(2) {
+    top: 18px;
+}
+
+.Toggle span:nth-child(3) {
+    top: 32px;
+}
+
+.Toggle.active span:nth-child(1) {
+    top: 18px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}     
+
+.Toggle.active span:nth-child(2),
+.Toggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*---------for desktop screen-------------*/ 
+@media screen and (min-width: 640px) {
+    #logo img {
+        max-width:50%;
+        text-align: center;
+    }	
+
+    .index img {
+        max-width:100%;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }	
+
+    .left-box img{
+        max-width: 70%;
+    }
+
+    .wrapper {
+    margin-top: 0.1em;
+    }
+
+
+    nav {
+        font-family: Courier, serif;
+        /* padding: 10px; */
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .Toggle {display: none;}
+    
+    .menu {
+        color: var(--secondry-color);    
+        text-decoration: none;
+        width: 100%;
+        font-size: 0.9em;
+        background-color: transparent;
+        margin: 0 10px;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        }
+
+    .menu ul {
+        height: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+
+    .index > .menu ul {
+        height: 10em;
+    }
+
+    .menu ul li a {
+        padding: 0 1em;
+        border-bottom: none;
+        font-weight:normal;
+    }
+
+    .menu ul li a:hover {
+        color:#DF4C73;  
+        background-color:transparent;
+    }
+}
+
+/* ====================class for positioning===================== */
+.large {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.link_black {
+    color: #3F4A3C; 
+    text-decoration:none;   
+}
+
+/* ===============class for text over image=============== */
+.layer {
+    top:6em;
+    position: relative;
+}
+
+.layer p {
+    position: absolute;
+    color: white;
+    font-family: Cambria, Cochin;
+    font-size: 1.5em;
+    font-weight: 600;
+    top: 42%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    }
+
+.layer a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin: 0;
+    font-size: 1em;
+    border: solid white 1px;
+    border-radius: 3px;
+    padding: 3px;
+    color: white;
+    text-decoration: none;
+    }
+
+.layer a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.layer img {
+    width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+
+    main {
+        margin-top: 3em;
+    }
+
+    footer p {
+        font-size: 0.7em;
+    }
+
+    .wrapper > .left-box {
+        margin-right: 0;
+        margin-left: 0 ;
+    }
+
+    .layer {
+        top:0;
+    }
+
+    .layer p {
+        font-size: 1em;
+        top: 40%;
+    }
+
+    .layer a {
+        font-size: 0.8em;
+        padding: 2px;
+    }        
+        
+}
+
+
+/* ===============class for comment over image=============== */
+.layerLeft {
+    position: relative;
+}
+  
+.layerLeft p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    color: #fff;
+    background: #DF4C73;
+    font-size: 15px;
+    line-height: 1;
+    padding: 5px 10px;
+}
+  
+.layerLeft img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+/* ====================header===================== */
+h1, h2, h3, h4 {
+    color: var(--secondry-color);
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+h1 {
+    font-size: 2.5em;   
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {    
+    font-size: 1.5em;
+    /* margin-top: 20px; */
+    font-weight: bold;
+}
+
+h4{
+    margin-top: 10px;
+}
+
+.space {
+    margin-top: 7em;
+}
+
+/* ====================Grid===================== */
+.container4 {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.5fr; 
+    /* gap: 0px 30px; */
+    grid-template-areas: "row4-1 row4-2 row4-3 row4-4"; 
+    place-items: start center;
+}
+.row4-1 { 
+    grid-area: row4-1;
+}
+.row4-2 { 
+    grid-area: row4-2;
+}
+.row4-3 { 
+    grid-area: row4-3;
+}
+.row4-4 { 
+    grid-area: row4-4;
+    text-align: center;
+}
+
+/* grid for two rows */
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr;
+    gap: 0px 50px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "row2-1 row2-2";
+    place-items: center;
+    padding: 30px 30px 30px 0;
+}  
+
+.row2-1 { 
+    grid-area: row2-1; 
+    text-align: center;
+}  
+
+.row2-2 { 
+    grid-area: row2-2;
+    text-align: center;
+}
+
+/* grid for three rows */
+.container3 {
+    display: grid; 
+    grid-template-columns: 1fr 4fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 5px; 
+    grid-template-areas: 
+    "row3-1 row3-2 row3-3"; 
+    place-items: center;
+    margin-bottom: 30px;
+}
+
+.row3-1 { 
+    grid-area: row3-1;
+}
+
+.row3-2 { 
+    grid-area: row3-2;
+}
+
+.row3-3 { 
+    grid-area: row3-3;
+}
+
+
+/* ====================box===================== */    
+.box-blue {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #fff;
+    border: solid 3px #286FB4;
+    border-radius: 10px;
+    background: #286FB4;
+}
+.box-blue p {
+    margin: 0; 
+    padding: 0;
+}
+
