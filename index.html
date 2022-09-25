@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Group 5">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="./static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/index.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script src="./js/index.js"></script>
+</head>
+<body onload="loadPage()">
+    <header>
+        <nav>
+
+            <div class="wrapper">
+                <div class="left-box">
+                    <a href="./pages/shopping_cart.html"><img src="static/images/shopping_cart.png" alt="shopping cart"></a>
+                </div>
+                <div class="left-box">
+                    <div class="toggle_switch">
+                        <img src='./static/images/moon.png' id="darkModeSwitch" onclick="toggleDarkMode()">
+                    </div>
+                </div>
+            </div>
+
+            <div class="index">                
+                <div class="drawer">
+                    <div id="Logo">
+                        <a href="index.html"><img  id='headerLogo' src="static/images/logo.png" alt="company logo"></a>
+                    </div>
+                </div>
+
+                <div class="Toggle">
+                　　<span></span>
+                　　<span></span>
+                　　<span></span>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="./pages/catalogue.html">PRODUCT</a></li>
+                    <li><a href="./pages/about.html">ABOUT</a></li>
+                    <li><a href="./pages/contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </nav>    
+    </header>
+    <main>
+        <section>
+            <div class="layer">
+                <img src="./static/images/top.jpg" alt="store top">
+                <p>2022 New selection</p>
+                <a href="./pages/catalogue.html">Shop the collection</a>
+            </div>
+            <div class="container3">
+                <div class="row3-2">
+                    <div class='space'><h1>Welcome</h1></div>
+                    <p>
+                        Here are Group Five, we care about the environment. All of our clothing is made 100% without 
+                        harming any animals. We have many measures set in place such that none of our products are
+                        ever the cause of animal abuse.
+                    </p>
+                    <p>
+                        We are really excited to announce the launch of our new line of Winter 2021 clothes! All 
+                        of the products in this line ensure that you'll be at the top of your fashion game coming 
+                        this cold season.
+                    </p>
+
+                 </div>
+            </div>
+        </section>
+        <section>
+            <h2>New Arrival</h2>
+            <div class="container-new-arrival">
+                <div>
+                    <div class="layerLeft">
+                        <a href="./pages/product.html"><img src="./static/images/product_tops1.jpg" alt="new arrived tops"></a>
+                        <p>New</p>	
+                    </div>
+                </div>  
+                <div>
+                    <div class="layerLeft">
+                        <a href="./pages/product.html"><img src="./static/images/product_bottoms1.jpg" alt="new arrived bottoms"></a>
+                        <p>New</p>	
+                    </div>
+                </div>
+                <div>
+                    <div class="layerLeft">
+                        <a href="./pages/product.html"><img src="./static/images/product_tops4.jpg" alt="new arrived tops"></a>
+                        <p>New</p>	
+                    </div>
+                </div>
+                <div>
+                    <div class="layerLeft">
+                        <a href="./pages/product.html"><img src="./static/images/product_bottoms4.jpg" alt="new arrived bottoms"></a>
+                        <p>New</p>	
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- <p class="right"><a href=#top><img src="./static/images/arrow_up.png" alt="back to top"></a></p>  -->
+    </main>
+    <footer>
+        <div class="container4">
+            <div class="row4-1">
+                <a href="index.html" class="link_black"><img id='footerLogo' src="./static/images/logo.png" alt="home" width="150px"></a>
+                <p>123 Happy St., Ottawa, ON, Canada</p> 
+                <p>(123) 456-7890</p>
+                <p>mail@groupfive.ca</p>
+            </div>  
+            <div class="row4-2">
+                <p><a href="index.html">HOME</a></p>
+                <p><a href="./pages/about.html">ABOUT</a></p>
+                <p><a href="./pages/catalogue.html">ONLINE SHOP</a></p>
+                <p><a href="./pages/contact.html">CONTACT</a></p>
+            </div>
+            <div class="row4-3">
+                <h4>Order</h4>
+                <p>Shopping cart</p>
+                <p></p>
+
+            </div>
+            <div class="row4-4">
+                <h4>Follow us</h4>
+                <div class="sns">
+                    <a href="https://www.facebook.com" target="_blank"><img src="./static/images/Facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="./static/images/Twitter.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="./static/images/Instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <p>© 2021 Group five</p>
+        </div>
+    </footer>
+</body> 
+</html>
