@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Group 5">
+    <title>Order</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/order.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <script src="../js/order.js"></script>
+</head>
+
+<body onload='displayCart()'>
+    <header>
+        <nav>
+            <div class="wrapper">
+                <div class="left-box">
+                    <a href="../pages/shopping_cart.html"><img src="../static/images/shopping_cart.png"
+                            alt="shopping cart"></a>
+                </div>
+                <div class="left-box">
+                    <div class="toggle_switch">
+                        <img src='../static/images/moon.png' id="darkModeSwitch" onclick="toggleDarkMode()">
+                    </div>
+                </div>
+            </div>
+
+            <div class="drawer">
+                <div id="logo">
+                    <a href="../index.html"><img id='headerLogo' src="../static/images/logo.png" alt="company logo"></a>
+                </div>
+            </div>
+
+            <div class="Toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="catalogue.html">PRODUCT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <h3>Order Form</h3>
+            <div class="container-1">
+
+                <div id='productList' class="p-img-name">
+                </div>
+                <hr>
+                <div class="total-box">
+                    <div class="cart-subtotal">
+                        <p>subtotal:
+                        <p>
+                        <p id='subtotal'></p>
+                    </div>
+                    <div class="cart-shipping">
+                        <p>shipping:</p>
+                        <p id='shipping'></p>
+                    </div>
+                    <div class="cart-tax">
+                        <p>tax:</p>
+                        <p id='tax'></p>
+                    </div>
+                    <div class="cart-total">
+                        <p>TOTAL:</p>
+                        <p id='total'></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-2">
+                <form name="order-form" class="order-form" onsubmit="return validateForm()">
+                    <div class="order-form-box">
+                        <div>
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" id="name" class="input" placeholder="Harry Potter"
+                                oninput="nameEvent()"><br>
+                            <span id='nameError'></span><br>
+                            <label for="Address">Address: </label>
+                            <input type="text" name="Address" id="address" class="input"
+                                placeholder="123 Happy st, Ottawa" oninput="addressEvent()"><br>
+                            <span id='addressError'></span><br>
+                            <label for="Postal Code">Postal Code: </label>
+                            <input type="text" name="postal_code" id="postal_code" class="input" placeholder="K2tK2T"
+                                oninput="postalEvent()"><br>
+                            <span id='postalError'></span><br>
+                        </div>
+                        <div>
+                            <label for="phone">Phone: </label>
+                            <input type="number" name="phone" id="phone" class="input" placeholder="613-111-1111"
+                                oninput="phoneEvent()"><br>
+                            <span id='phoneError'></span><br>
+                            <label for="email">Email Address: </label>
+                            <input type="text" name="email" id="email" class="input" placeholder="info@groupfive.com"
+                                oninput="emailEvent()"><br>
+                            <span id='emailError'></span><br>
+                            <label for="credit_card">Credit Card: </label>
+                            <input type="number" name="credit" id="credit" class="input" placeholder="1545 4445 445"
+                                oninput="creditEvent()"><br>
+                            <span id='creditError'></span><br>
+                        </div>
+                    </div>
+                    <div class="button-box">
+                        <input type="button" value="Confirm your order" onclick="validateForm()">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container4">
+            <div class="row4-1">
+                <a href="../index.html" class="link_black"><img id='footerLogo' src="../static/images/logo.png"
+                        alt="home" width="150px"></a>
+                <p>123 Happy St., Ottawa, ON, Canada</p>
+                <p>(123) 456-7890</p>
+                <p>mail@groupfive.ca</p>
+            </div>
+            <div class="row4-2">
+                <p><a href="../index.html">HOME</a></p>
+                <p><a href="about.html">ABOUT</a></p>
+                <p><a href="catalogue.html">ONLINE SHOP</a></p>
+                <p><a href="contact.html">CONTACT</a></p>
+            </div>
+            <div class="row4-3">
+                <h4>Order</h4>
+                <p>Shopping cart</p>
+                <p></p>
+
+            </div>
+            <div class="row4-4">
+                <h4>Follow us</h4>
+                <a href="https://www.facebook.com" target="_blank"><img src="../static/images/Facebook.png"
+                        alt="Facebook"></a>
+                <a href="https://twitter.com" target="_blank"><img src="../static/images/Twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="../static/images/Instagram.png"
+                        alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="center">
+            <p>© 2021 Group five</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

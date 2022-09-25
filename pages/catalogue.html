@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Group 5">
+    <title>Catalogue</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/catalogue.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../static/assets/catalogue.json"></script>
+    <script src="../js/catalogue.js"></script>
+</head>
+
+<body onload="displayProducts()">
+    <header>
+        <nav>
+            <div class="wrapper">
+                <div class="left-box">
+                    <a href="../pages/shopping_cart.html"><img src="../static/images/shopping_cart.png"
+                            alt="shopping cart"></a>
+                </div>
+                <div class="left-box">
+                    <div class="toggle_switch">
+                        <img src='../static/images/moon.png' id="darkModeSwitch" onclick="toggleDarkMode()">
+                    </div>
+                </div>
+            </div>
+
+            <div class="drawer">
+                <div id="logo">
+                    <a href="../index.html"><img id='headerLogo' src="../static/images/logo.png" alt="company logo"></a>
+                </div>
+            </div>
+
+            <div class="Toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="catalogue.html">PRODUCT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="mainbox">
+            <div class="filter-section">
+                <div class="filter">
+                    <div class="coll">
+                        <h4>Collection</h4>
+                        <div class="collection">
+                            <p><b><a onclick="chooseCollection('all')">All</a></b></p>
+                            <p><a onclick="chooseCollection('top')">Top</a></p>
+                            <p><a onclick="chooseCollection('bottoms')">Bottoms</a></p>
+                            <p><a onclick="chooseCollection('dress')">Dress</a></p>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <h4>Price</h4>
+                        <div class="range">
+                            <span class="font-weight-normal small text-muted mr-2">$0</span>
+                            <form class="multi-range-field w-100 mb-1">
+                                <input id="multi" class="multi-range" min="0" max="400" value=0 onchange="filter()"
+                                    type="range" />
+                            </form>
+                            <span class="font-weight-normal small text-muted ml-2">$400</span><br>
+                            <span id='selected_price' class="font-weight-normal small text-muted ml-2"></span>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="size">
+                        <h4>Size</h4>
+                        <div class="size-box">
+                            <div class="btn-group" data-toggle="buttons">
+                                <div class="form-check pl-0 mb-3">
+                                    <input type="radio" name='size' onchange="filter()" value='s' class="small" id="s">
+                                    <label class="size-small" for="s">S</label>
+                                </div>
+                                <div class="form-check pl-0 mb-3">
+                                    <input type="radio" name='size' onchange="filter()" value='m' class="medium" id="m">
+                                    <label class="size-medium" for="m">M</label>
+                                </div>
+                                <div class="form-check pl-0 mb-3">
+                                    <input type="radio" name='size' onchange="filter()" value='l' class="large" id="l">
+                                    <label class="size-l" for="l">L</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="products-list">
+                <div class="column" id="product_listing">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container4">
+            <div class="row4-1">
+                <a href="../index.html" class="link_black"><img id='footerLogo' src="../static/images/logo.png"
+                        alt="home" width="150px"></a>
+                <p>123 Happy St., Ottawa, ON, Canada</p>
+                <p>(123) 456-7890</p>
+                <p>mail@groupfive.ca</p>
+            </div>
+            <div class="row4-2">
+                <p><a href="../index.html">HOME</a></p>
+                <p><a href="about.html">ABOUT</a></p>
+                <p><a href="catalogue.html">ONLINE SHOP</a></p>
+                <p><a href="contact.html">CONTACT</a></p>
+            </div>
+            <div class="row4-3">
+                <h4>Order</h4>
+                <p>Shopping cart</p>
+                <p></p>
+
+            </div>
+            <div class="row4-4">
+                <h4>Follow us</h4>
+                <a href="https://www.facebook.com" target="_blank"><img src="../static/images/Facebook.png"
+                        alt="Facebook"></a>
+                <a href="https://twitter.com" target="_blank"><img src="../static/images/Twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="../static/images/Instagram.png"
+                        alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="center">
+            <p>© 2021 Group five</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

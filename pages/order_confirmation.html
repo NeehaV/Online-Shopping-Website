@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Group 5">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/order_confirmation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <script src="../js/order_confirmation.js"></script>
+</head>
+
+<body onload='orderDetails()'>
+    <header>
+        <nav>
+            <div class="wrapper">
+                <div class="left-box">
+                    <a href="../pages/shopping_cart.html"><img src="../static/images/shopping_cart.png"
+                            alt="shopping cart"></a>
+                </div>
+                <div class="left-box">
+                    <div class="toggle_switch">
+                        <img src='../static/images/moon.png' id="darkModeSwitch" onclick="toggleDarkMode()">
+                    </div>
+                </div>
+            </div>
+
+            <div class="drawer">
+                <div id="logo">
+                    <a href="../index.html"><img id='headerLogo' src="../static/images/logo.png" alt="company logo"></a>
+                </div>
+            </div>
+
+            <div class="Toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="catalogue.html">PRODUCT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <hr>
+            <h3>Please check your order details.</h3>
+            <div class="container-2">
+                <div class="customer-box">
+
+                    <h4>Shipping address</h4>
+                    <div class="customer-name">
+                        <p>Name:</p>
+                        <p id='name'></p>
+                    </div>
+                    <div class="customer-address">
+                        <p>Address:</p>
+                        <p id='address'></p>
+                    </div>
+                    <div class="customer-postal">
+                        <p>Postal Code:</p>
+                        <p id='postal'></p>
+                    </div>
+                    <div class="customer-phone">
+                        <p>Phone:</p>
+                        <p id='phone'></p>
+                    </div>
+                    <div class="customer-email">
+                        <p>Email address:</p>
+                        <p id='email'></p>
+                    </div>
+                    <div class="customer-credit">
+                        <p>Credit Card:</p>
+                        <p id='credit'></p>
+                    </div>
+                </div>
+                <div class="total-box">
+                    <h4>Your Total</h4>
+                    <div class="cart-subtotal">
+                        <p>subtotal:
+                        <p>
+                        <p id='subtotal'></p>
+                    </div>
+                    <div class="cart-shipping">
+                        <p>shipping:</p>
+                        <p id='shipping'>$5</p>
+                    </div>
+                    <div class="cart-tax">
+                        <p>tax:</p>
+                        <p id='tax'></p>
+                    </div>
+                    <div class="cart-total">
+                        <p>TOTAL:</p>
+                        <p id='total'></p>
+                    </div>
+                </div>
+                <div class="button-box">
+                    <input type="submit" value="Place Your Order" onclick="placeOrder()">
+                </div>
+            </div>
+            <div class="container-1">
+                <div class="p-img-name">
+                    <h3>Your items</h3>
+                    <div id='productList'></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container4">
+            <div class="row4-1">
+                <a href="../index.html" class="link_black"><img id='footerLogo' src="../static/images/logo.png"
+                        alt="home" width="150px"></a>
+                <p>123 Happy St., Ottawa, ON, Canada</p>
+                <p>(123) 456-7890</p>
+                <p>mail@groupfive.ca</p>
+            </div>
+            <div class="row4-2">
+                <p><a href="../index.html">HOME</a></p>
+                <p><a href="about.html">ABOUT</a></p>
+                <p><a href="catalogue.html">ONLINE SHOP</a></p>
+                <p><a href="contact.html">CONTACT</a></p>
+            </div>
+            <div class="row4-3">
+                <h4>Order</h4>
+                <p>Shopping cart</p>
+                <p></p>
+
+            </div>
+            <div class="row4-4">
+                <h4>Follow us</h4>
+                <a href="https://www.facebook.com" target="_blank"><img src="../static/images/Facebook.png"
+                        alt="Facebook"></a>
+                <a href="https://twitter.com" target="_blank"><img src="../static/images/Twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="../static/images/Instagram.png"
+                        alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="center">
+            <p>© 2021 Group five</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

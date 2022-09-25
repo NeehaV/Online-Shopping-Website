@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Group 5">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/contact.css">
+    <script src="../js/contact.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadDarkMode()">
+    <header>
+        <nav>
+            <div class="wrapper">
+                <div class="left-box">
+                    <a href="../pages/shopping_cart.html"><img src="../static/images/shopping_cart.png"
+                            alt="shopping cart"></a>
+                </div>
+                <div class="left-box">
+                    <div class="toggle_switch">
+                        <img src='../static/images/moon.png' id="darkModeSwitch" onclick="toggleDarkMode()">
+                    </div>
+                </div>
+            </div>
+
+            <div class="drawer">
+                <div id="logo">
+                    <a href="../index.html"><img id='headerLogo' src="../static/images/logo.png" alt="company logo"></a>
+                </div>
+            </div>
+
+            <div class="Toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="catalogue.html">PRODUCT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <div class="row3-2">
+                <img src="../static/images/contact.jpg" alt="Contact us">
+
+                <div class="box-grey">
+                    <div class="Contact-form">
+                        <h3>Please fill out the form below!</h3>
+                        <form name="contactform" onsubmit="return validateForm()" method="post">
+                            <div class="grid-container">
+                                <div class="block grid-item">
+                                    <label for="first_name">First Name</label>
+                                </div>
+                                <div class="block grid-item">
+                                    <input type="text" id='fName' name="first_name" class="simpleinput"
+                                        oninput="firstNameEvent()" placeholder="Enter Your First Name" />
+                                    <br><span id="fNameError"></span><br>
+                                </div>
+
+                                <div class="block grid-item">
+                                    <label for="last_name">Last Name</label>
+                                </div>
+                                <div class="block grid-item">
+                                    <input type="text" id='lName' name="last_name" class="simpleinput"
+                                        oninput="lastNameEvent()" placeholder="Enter Your Last Name" />
+                                    <br><span id="lNameError"></span><br>
+                                </div>
+
+
+                                <div class="block grid-item">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="block grid-item">
+                                    <input type="text" id='email' name="email" class="simpleinput"
+                                        oninput="emailEvent()" placeholder="Enter Your Email" />
+                                    <br><span id="emailError"></span><br>
+                                </div>
+
+                                <div class="block grid-item">
+                                    <label for="message">Message</label>
+                                </div>
+                                <div class="block grid-item">
+                                    <textarea id="message" name="message" class="largeinput" oninput="messageEvent()"
+                                        placeholder="Enter your message"></textarea>
+                                    <br><span id="messageError"></span><br>
+                                </div>
+                            </div>
+                            <input class="btn-submit" type="submit" value="Submit" />
+                        </form>
+                    </div>
+                </div>
+
+                <p class="center-text">
+                    We look forward to reading your message and may reply as soon as possible.
+                </p>
+                <div class="box-border">
+                    <p>
+                        To speak with a Customer Service Representative<br>
+                        <b>Phone: (123) 456-7890</b><br>
+                        Monday-Friday 8am-5pm EST
+                    </p>
+                </div>
+
+            </div>
+    </main>
+
+
+    <footer>
+        <div class="container4">
+            <div class="row4-1">
+                <a href="../index.html" class="link_black"><img id='footerLogo' src="../static/images/logo.png"
+                        alt="home" width="150px"></a>
+                <p>123 Happy St., Ottawa, ON, Canada</p>
+                <p>(123) 456-7890</p>
+                <p>mail@groupfive.ca</p>
+            </div>
+            <div class="row4-2">
+                <p><a href="../index.html">HOME</a></p>
+                <p><a href="about.html">ABOUT</a></p>
+                <p><a href="catalogue.html">ONLINE SHOP</a></p>
+                <p><a href="contact.html">CONTACT</a></p>
+            </div>
+            <div class="row4-3">
+                <h4>Order</h4>
+                <p>Shopping cart</p>
+                <p></p>
+            </div>
+            <div class="row4-4">
+                <h4>Follow us</h4>
+                <div class="sns">
+                    <a href="https://www.facebook.com" target="_blank"><img src="../static/images/Facebook.png"
+                            alt="Facebook"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="../static/images/Twitter.png"
+                            alt="Twitter"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="../static/images/Instagram.png"
+                            alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <p>© 2021 Group five</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
